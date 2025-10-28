@@ -12,4 +12,4 @@ app.use("/", apiRouter);
 
 app.listen(port, () => {
     console.log(`Lao-Top API running at http://localhost:${port}`);
-});
+}); 
