@@ -1,15 +1,15 @@
 const express = require("express");
-const apiRouter = require("./apiRoute");
+const genresRouter = require("./genres/genres.Router");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 // Middleware
-app.use(express.json());
+app.use(express.json);
 
 // Use the imported router for all paths
-app.use("/", apiRouter);
+app.use("/", genresRouter);
 
 app.listen(port, () => {
-    console.log(`Lao-Top API running at http://localhost:${port}`);
+    console.log(`book Library API running at http://localhost:${port}`);
 }); 
