@@ -1,6 +1,6 @@
 const express = require("express");
 const managebooksController = require("../controllers/manage booksController");
-const genresRoute = express.genresRoute();
+const genresRoute = express.Router();
 
 genresRoute.get("/", managebooksController.handeGreeting);
 
