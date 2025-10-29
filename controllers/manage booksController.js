@@ -5,8 +5,8 @@ const handeGreeting = (req, res) => {
 };
 
 const handleGetAllauthors = (req, res) => {
-    const getAllauthorss = authorsModel.getAllauthorss();
-    res.json(getAllauthorss);
+    const getAllauthors = authorsModel.getAllauthors();
+    res.json(authorsdata);
 };
 
 const managebooksController = {

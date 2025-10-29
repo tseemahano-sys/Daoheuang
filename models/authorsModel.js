@@ -5,7 +5,7 @@ const dataauthors = [
 ];
 
 const authorsModel = { 
-    getAllauthorss:() => dataauthors,
+    getAllauthors:() => dataauthors,
 };
 
 module.exports = authorsModel;

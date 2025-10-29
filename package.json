@@ -5,8 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node routes/server.js",
-    "dev": "nodemon routes/server.js",
-    "type": "commonjs"
+    "dev": "nodemon routes/server.js"
   },
   "keywords": [],
   "author": "",
