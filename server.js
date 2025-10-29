@@ -1,7 +1,6 @@
 const genresRoute = require("./routes/genresRoute");
 
 const express = require("express");
-const genresRoute = router("./route/genresRoute");
 
 const app = express();
 const port = 3000;
