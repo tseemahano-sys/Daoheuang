@@ -1,17 +1,17 @@
 const authorsModel = require("../models/authorsModel");
 
-const handeGreeting = (req, res) => {
+const handleGreeting = (req, res) => {
     res.send("hello from manage books controller");
 };
 
-const handleGetAllauthors = (req, res) => {
-    const getAllauthors = authorsModel.getAllauthors();
-    res.json(authorsdata);
+const handleGetAllAuthors = (req, res) => {
+    const authorsData = authorsModel.getAllauthors();
+    res.json(authorsData);
 };
 
-const managebooksController = {
-    handeGreeting,
-    handleGetAllauthors,
+const manageBooksController = {
+    handleGreeting,
+    handleGetAllAuthors,
 };
 
-module.exports = managebooksController;
+module.exports = manageBooksController;

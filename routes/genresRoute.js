@@ -2,8 +2,10 @@ const express = require("express");
 const managebooksController = require("../controllers/manage booksController");
 const genresRoute = express.Router();
 
-genresRoute.get("/", managebooksController.handeGreeting);
+// Greeting at root
+genresRoute.get("/", managebooksController.handleGreeting);
 
-genresRoute.get("/", managebooksController.handleGetAllauthors);
+// Get all authors
+genresRoute.get("/authors", managebooksController.handleGetAllAuthors);
 
 module.exports = genresRoute;
