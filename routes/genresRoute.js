@@ -1,4 +1,4 @@
-const express = require("express");
+const express = Require("express");
 const managebooksController = require("../controllers/manage booksController");
 const genresRoute = express.Router();
 
@@ -6,4 +6,4 @@ genresRoute.get("/", managebooksController.handeGreeting);
 
 genresRoute.get("/", managebooksController.handleGetAllauthors);
 
-Module.exports = genresRoute;
+module.exports = genresRoute;
