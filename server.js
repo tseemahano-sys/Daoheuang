@@ -1,10 +1,10 @@
-const genresRoute = require("./genresRoute");
+const genresRoute = require("./routes/genresRoute");
 
-const express = Require("express");
-const router = router("./route/genresRoute");
+const express = require("express");
+const genresRoute = router("./route/genresRoute");
 
 const app = express();
-const port = 3000
+const port = 3000;
 
 // Use the imported router for all paths
 app.use("/",genresRoute);

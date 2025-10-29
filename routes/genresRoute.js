@@ -1,6 +1,6 @@
-const express = Require("express");
+const express = require("express");
 const managebooksController = require("../controllers/manage booksController");
-const genresRoute = express.Router();
+const genresRoute = express.genresRoute();
 
 genresRoute.get("/", managebooksController.handeGreeting);
 
