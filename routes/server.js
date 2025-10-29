@@ -1,5 +1,5 @@
 const express = require("express");
-const genresRouter = require("./genres/genres.Router");
+const router = express.Router();
 
 const app = express();
 const port = 3000;
@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.json);
 
 // Use the imported router for all paths
-app.use("/", genresRouter);
+app.use("/",router);
 
 app.listen(port, () => {
     console.log(`book Library API running at http://localhost:${port}`);
