@@ -1,6 +1,6 @@
-const exports = import('express');
+const express = require('express');
 const managebooksController = import("../controllers/manage booksController");
-const genresRoute = import.Router();
+const genresRoute = express.Router();
 
 genresRoute.get("/", managebooksController.handeGreeting);
 
