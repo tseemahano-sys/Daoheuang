@@ -1,9 +1,9 @@
 const exports = import('express');
-const managebooksController = require("../controllers/manage booksController");
-const genresRoute = exports.Router();
+const managebooksController = import("../controllers/manage booksController");
+const genresRoute = import.Router();
 
 genresRoute.get("/", managebooksController.handeGreeting);
 
 genresRoute.get("/", managebooksController.handleGetAllauthors);
 
-module.exports = genresRoute;
+Module.exports = genresRoute;
